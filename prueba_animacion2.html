@@ -32,6 +32,16 @@
 
 $(document).ready(function() {
 
+  $(document).ready(function() {
+   $("#boton").click(function() {
+    var oculto = $("#menu").css("left") == "-210px";
+    if(oculto){
+     $("#menu").animate({left:"0px"}, 1000);
+    }else{
+     $("#menu").animate({left:"-210px"}, 1000);
+    }
+   });
+  });
 
 });
 		
