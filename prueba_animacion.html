@@ -16,9 +16,35 @@ img{
 
 $(document).ready(function() {
 
+	$("#imagen").click(function(){
+		$(this).animate(
+		{
+			marginLeft:"+=50px"
+		},1000);
+	});
+
+	$("img").mouseover(function(){
+			$(this).animate({
+				opacity:1
+			},250)
+		});
+
+	$("img").mouseout(function(){
+			$(this).animate({
+				opacity:0.5
+			},250)
+		});
 });
 
-
+/*
+	$(document).ready(function(){
+		$("img").mouseover(function(){
+			$(this).animate({
+				opacity:1;
+			},250)
+		});
+	});
+*/
 </script>
 </head>
 
